@@ -41,7 +41,7 @@ search_practice = [
 
 # Menu banner is typically defined by menu owner
 border = "=" * 25
-banner = f"\n{border}\nPlease Select An Option\n{border}"
+banner = f"\n{border}\n\u001b[33mPlease Select an Option\u001b[0m\n{border}"
 
 
 # def menu
@@ -52,8 +52,8 @@ def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
     menu_list.append([u"\u001b[34mMath\u001b[0m", math])
-    menu_list.append(["Print", print])
-    menu_list.append(["Search", search])
+    menu_list.append([u"\u001b[35mPrint\u001b[0m", print])
+    menu_list.append([u"\u001b[32mSearch\u001b[0m", search])
     menuy.menu(title, menu_list)
 
 
