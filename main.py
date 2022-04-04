@@ -51,7 +51,7 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 def menu():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Math", math])
+    menu_list.append([u"\u001b[34mMath\u001b[0m", math])
     menu_list.append(["Print", print])
     menu_list.append(["Search", search])
     menuy.menu(title, menu_list)
